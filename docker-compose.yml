@@ -1,6 +1,9 @@
 services:
-  nodejs:
-    build: .
-    container_name: nodejs_container
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
