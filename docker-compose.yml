@@ -1,0 +1,6 @@
+services:
+  nodejs:
+    build: .
+    container_name: nodejs_container
+    ports:
+      - "3000:3000"
